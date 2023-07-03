@@ -37,7 +37,7 @@ export default function RootLayout({
               {/* PC */}
               <nav className="hidden sm:grid grid-flow-col gap-4">
                 <Link href="/">Articles</Link>
-                <Link href="/products/0001">Product</Link>
+                <Link href="/products">Product</Link>
                 <Link href="/about">About</Link>
               </nav>
               {/* 모바일 */}

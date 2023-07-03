@@ -108,7 +108,7 @@
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "chunks": [
-          "app/[slug]/page:app/[slug]/page"
+          "app/products/layout:app/products/layout"
         ],
         "name": "*",
         "async": false
@@ -116,7 +116,7 @@
       "": {
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "chunks": [
-          "app/[slug]/page:app/[slug]/page"
+          "app/products/layout:app/products/layout"
         ],
         "name": "",
         "async": false
@@ -124,7 +124,7 @@
       "default": {
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "chunks": [
-          "app/[slug]/page:app/[slug]/page"
+          "app/products/layout:app/products/layout"
         ],
         "name": "default",
         "async": false
@@ -134,7 +134,7 @@
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "chunks": [
-          "app/page:app/page"
+          "app/layout:app/layout"
         ],
         "name": "*",
         "async": false
@@ -142,7 +142,7 @@
       "": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "chunks": [
-          "app/page:app/page"
+          "app/layout:app/layout"
         ],
         "name": "",
         "async": false
@@ -150,7 +150,7 @@
       "default": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "chunks": [
-          "app/page:app/page"
+          "app/layout:app/layout"
         ],
         "name": "default",
         "async": false
@@ -223,13 +223,39 @@
         "name": "default",
         "async": false
       }
+    },
+    "(app-client)/./src/components/MeowArtcle.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/MeowArtcle.tsx",
+        "chunks": [
+          "app/products/layout:app/products/layout"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/MeowArtcle.tsx",
+        "chunks": [
+          "app/products/layout:app/products/layout"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/components/MeowArtcle.tsx",
+        "chunks": [
+          "app/products/layout:app/products/layout"
+        ],
+        "name": "default",
+        "async": false
+      }
     }
   },
   "__edge_ssr_module_mapping__": {},
   "__entry_css_files__": {
     "/Users/sanchezna/aiblog/src/app/layout": [
-      "static/css/_app-client_src_app_globals_css.css",
-      "static/css/_app-client_node_modules_next_font_google_target_css_path_src_app_layout_tsx_import_Open_Sans-d22b4d.css"
+      "static/css/_app-client_node_modules_next_font_google_target_css_path_src_app_layout_tsx_import_Open_Sans-d22b4d.css",
+      "static/css/_app-client_src_app_globals_css.css"
     ]
   },
   "/Users/sanchezna/aiblog/node_modules/next/dist/shared/lib/app-router-context.js": {
@@ -747,7 +773,7 @@
   "/Users/sanchezna/aiblog/node_modules/next/dist/client/image.js": {
     "id": "(app-client)/./node_modules/next/dist/client/image.js",
     "chunks": [
-      "app/[slug]/page:app/[slug]/page"
+      "app/products/layout:app/products/layout"
     ],
     "name": "*",
     "async": false
@@ -755,7 +781,7 @@
   "/Users/sanchezna/aiblog/node_modules/next/dist/esm/client/image.js": {
     "id": "(app-client)/./node_modules/next/dist/client/image.js",
     "chunks": [
-      "app/[slug]/page:app/[slug]/page"
+      "app/products/layout:app/products/layout"
     ],
     "name": "*",
     "async": false
@@ -763,7 +789,7 @@
   "/Users/sanchezna/aiblog/node_modules/next/dist/client/image.js#": {
     "id": "(app-client)/./node_modules/next/dist/client/image.js",
     "chunks": [
-      "app/[slug]/page:app/[slug]/page"
+      "app/products/layout:app/products/layout"
     ],
     "name": "",
     "async": false
@@ -771,7 +797,7 @@
   "/Users/sanchezna/aiblog/node_modules/next/dist/esm/client/image.js#": {
     "id": "(app-client)/./node_modules/next/dist/client/image.js",
     "chunks": [
-      "app/[slug]/page:app/[slug]/page"
+      "app/products/layout:app/products/layout"
     ],
     "name": "",
     "async": false
@@ -779,7 +805,7 @@
   "/Users/sanchezna/aiblog/node_modules/next/dist/client/image.js#default": {
     "id": "(app-client)/./node_modules/next/dist/client/image.js",
     "chunks": [
-      "app/[slug]/page:app/[slug]/page"
+      "app/products/layout:app/products/layout"
     ],
     "name": "default",
     "async": false
@@ -787,7 +813,7 @@
   "/Users/sanchezna/aiblog/node_modules/next/dist/esm/client/image.js#default": {
     "id": "(app-client)/./node_modules/next/dist/client/image.js",
     "chunks": [
-      "app/[slug]/page:app/[slug]/page"
+      "app/products/layout:app/products/layout"
     ],
     "name": "default",
     "async": false
@@ -795,7 +821,7 @@
   "/Users/sanchezna/aiblog/node_modules/next/dist/client/link.js": {
     "id": "(app-client)/./node_modules/next/dist/client/link.js",
     "chunks": [
-      "app/page:app/page"
+      "app/layout:app/layout"
     ],
     "name": "*",
     "async": false
@@ -803,7 +829,7 @@
   "/Users/sanchezna/aiblog/node_modules/next/dist/esm/client/link.js": {
     "id": "(app-client)/./node_modules/next/dist/client/link.js",
     "chunks": [
-      "app/page:app/page"
+      "app/layout:app/layout"
     ],
     "name": "*",
     "async": false
@@ -811,7 +837,7 @@
   "/Users/sanchezna/aiblog/node_modules/next/dist/client/link.js#": {
     "id": "(app-client)/./node_modules/next/dist/client/link.js",
     "chunks": [
-      "app/page:app/page"
+      "app/layout:app/layout"
     ],
     "name": "",
     "async": false
@@ -819,7 +845,7 @@
   "/Users/sanchezna/aiblog/node_modules/next/dist/esm/client/link.js#": {
     "id": "(app-client)/./node_modules/next/dist/client/link.js",
     "chunks": [
-      "app/page:app/page"
+      "app/layout:app/layout"
     ],
     "name": "",
     "async": false
@@ -827,7 +853,7 @@
   "/Users/sanchezna/aiblog/node_modules/next/dist/client/link.js#default": {
     "id": "(app-client)/./node_modules/next/dist/client/link.js",
     "chunks": [
-      "app/page:app/page"
+      "app/layout:app/layout"
     ],
     "name": "default",
     "async": false
@@ -835,7 +861,7 @@
   "/Users/sanchezna/aiblog/node_modules/next/dist/esm/client/link.js#default": {
     "id": "(app-client)/./node_modules/next/dist/client/link.js",
     "chunks": [
-      "app/page:app/page"
+      "app/layout:app/layout"
     ],
     "name": "default",
     "async": false
@@ -944,18 +970,42 @@
     "name": "default",
     "async": false
   },
-  "/Users/sanchezna/aiblog/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Open_Sans\",\"arguments\":[{\"subsets\":[\"latin\"],\"display\":\"swap\"}],\"variableName\":\"open_Sans\"}#": {
-    "id": "null",
-    "name": "",
+  "/Users/sanchezna/aiblog/src/components/MeowArtcle.tsx": {
+    "id": "(app-client)/./src/components/MeowArtcle.tsx",
     "chunks": [
-      "static/css/_app-client_node_modules_next_font_google_target_css_path_src_app_layout_tsx_import_Open_Sans-d22b4d.css"
-    ]
+      "app/products/layout:app/products/layout"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/sanchezna/aiblog/src/components/MeowArtcle.tsx#": {
+    "id": "(app-client)/./src/components/MeowArtcle.tsx",
+    "chunks": [
+      "app/products/layout:app/products/layout"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/sanchezna/aiblog/src/components/MeowArtcle.tsx#default": {
+    "id": "(app-client)/./src/components/MeowArtcle.tsx",
+    "chunks": [
+      "app/products/layout:app/products/layout"
+    ],
+    "name": "default",
+    "async": false
   },
   "/Users/sanchezna/aiblog/src/app/globals.css#": {
     "id": "null",
     "name": "",
     "chunks": [
       "static/css/_app-client_src_app_globals_css.css"
+    ]
+  },
+  "/Users/sanchezna/aiblog/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Open_Sans\",\"arguments\":[{\"subsets\":[\"latin\"],\"display\":\"swap\"}],\"variableName\":\"open_Sans\"}#": {
+    "id": "null",
+    "name": "",
+    "chunks": [
+      "static/css/_app-client_node_modules_next_font_google_target_css_path_src_app_layout_tsx_import_Open_Sans-d22b4d.css"
     ]
   }
 }
