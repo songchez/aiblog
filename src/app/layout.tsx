@@ -2,6 +2,7 @@ import Link from "next/link";
 import "./globals.css";
 import { Open_Sans } from "next/font/google";
 import Footer from "@/components/footer";
+import Script from "next/script";
 
 const open_Sans = Open_Sans({
   subsets: ["latin"],
@@ -25,6 +26,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className={open_Sans.className}>
+      <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3471034360825552"
+          crossOrigin="anonymous"
+        ></Script>
+      </head>
       <body>
         <div className="p-1 sm:p-5">
           <header className="flex justify-center w-full">
