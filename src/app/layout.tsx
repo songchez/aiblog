@@ -44,8 +44,6 @@ export default function RootLayout({
               </Link>
               {/* PC */}
               <nav className="hidden sm:grid grid-flow-col gap-4">
-                <Link href="/">Articles</Link>
-                <Link href="/products">Product</Link>
                 <Link href="/fun">Fun</Link>
               </nav>
               {/* 모바일 */}
@@ -74,13 +72,7 @@ export default function RootLayout({
                   className="dropdown-content menu p-2 shadow bg-base rounded-box w-52"
                 >
                   <li>
-                    <Link href="/">Articles</Link>
-                  </li>
-                  <li>
                     <Link href="/fun">Fun</Link>
-                  </li>
-                  <li>
-                    <Link href="/products/0001">Product</Link>
                   </li>
                 </ul>
               </div>

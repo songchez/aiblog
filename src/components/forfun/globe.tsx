@@ -18,9 +18,9 @@ export default function Globe() {
       diffuse: 1.5,
       mapSamples: 16000,
       mapBrightness: 7,
-      baseColor: [0.5, 0.5, 0.5],
+      baseColor: [0.4, 0.7, 0.5],
       markerColor: [1, 0.3, 0.2],
-      glowColor: [1.3, 1, 1],
+      glowColor: [1, 1.2, 1],
       markers: [
         // longitude latitude
         { location: [37.7595, -122.4367], size: 0.03 },

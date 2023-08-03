@@ -27,7 +27,7 @@ export default function Meow() {
   };
 
   return (
-    <div className="grid gap-6 w-auto p-5 bg-neutral text-neutral-50 rounded-2xl">
+    <div className="max-w-4xl grid gap-6 w-auto p-5 bg-neutral text-neutral-50 rounded-2xl">
       <div className="flex justify-between">
         <h3 className="text-xl pb-4 font-bold">The Facts of Cats</h3>
         <button onClick={getCata}>

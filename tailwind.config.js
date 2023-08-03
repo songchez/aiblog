@@ -5,5 +5,9 @@ module.exports = {
   daisyui: {
     themes: ["garden", "dark", "cupcake"],
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("daisyui"),
+    require("tailwindcss-animated"),
+  ],
 };
