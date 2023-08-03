@@ -13,10 +13,10 @@ const open_Sans = Open_Sans({
 //쉽게 동적메타데이타도 만들어 볼 수 있다!
 export const metadata = {
   title: {
-    default: "Sanchez's Nelog",
-    template: "Sanchez's Nelog | %s",
+    default: "NiceFood&NiceBody",
+    template: "NiceFood&NiceBody | %s",
   },
-  description: "산체스의 넥스트 스터디를 담은 갠댄한 블로그",
+  description: "Nice food make Nice body.",
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko" className={open_Sans.className}>
+    <html lang="ko" className={open_Sans.className} data-theme="garden">
       <head>
         <Script
           async
@@ -46,7 +46,7 @@ export default function RootLayout({
               <nav className="hidden sm:grid grid-flow-col gap-4">
                 <Link href="/">Articles</Link>
                 <Link href="/products">Product</Link>
-                <Link href="/about">About</Link>
+                <Link href="/fun">Fun</Link>
               </nav>
               {/* 모바일 */}
               <div className="dropdown dropdown-end sm:hidden">
@@ -77,7 +77,7 @@ export default function RootLayout({
                     <Link href="/">Articles</Link>
                   </li>
                   <li>
-                    <Link href="/about">About</Link>
+                    <Link href="/fun">Fun</Link>
                   </li>
                   <li>
                     <Link href="/products/0001">Product</Link>
