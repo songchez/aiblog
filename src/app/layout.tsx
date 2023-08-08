@@ -72,7 +72,7 @@ export default function RootLayout({
                   className="dropdown-content menu p-2 shadow bg-base rounded-box w-52"
                 >
                   <li>
-                    <Link href="/fun">Fun</Link>
+                    <Link href="/fun">TalkToMe</Link>
                   </li>
                 </ul>
               </div>
