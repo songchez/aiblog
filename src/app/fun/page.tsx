@@ -19,7 +19,7 @@ export default function Fun() {
         {Collipse ? (
           <div className="animate-fade-right flex flex-col justify-center items-left gap-5">
             <h1 className="font-bold text-3xl text-center text-neutral-focus">
-              Where You Live?
+              Where You Live??
             </h1>
             <input
               type="text"
