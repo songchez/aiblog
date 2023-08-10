@@ -8,17 +8,17 @@ export default function CreatedAt({ createdAt }: any) {
 
   if (betweenTime < 1) return "방금전";
   if (betweenTime < 60) {
-    return `${betweenTime}분전`;
+    return `${betweenTime}minutes ago`;
   }
 
   const betweenTimeHour = Math.floor(betweenTime / 60);
   if (betweenTimeHour < 24) {
-    return `${betweenTimeHour}시간전`;
+    return `${betweenTimeHour}hours ago`;
   }
 
   const betweenTimeDay = Math.floor(betweenTime / 60 / 24);
   if (betweenTimeDay < 365) {
-    return `${betweenTimeDay}일전`;
+    return `${betweenTimeDay}days ago`;
   }
 
   return `${Math.floor(betweenTimeDay / 365)}년전`;

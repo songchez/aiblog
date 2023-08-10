@@ -38,7 +38,7 @@ export default function RootLayout({
           <header className="flex justify-center w-full">
             <div className="container flex justify-between items-center py-5 md:px-16 max-w-6xl">
               <Link href="/">
-                <h1 className="text-2xl text-primary font-serif bg-accent-focus ">
+                <h1 className="text-2xl text-primary-content font-serif bg-secondary-content/80">
                   {metadata.title.default}
                 </h1>
               </Link>

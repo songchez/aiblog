@@ -5,6 +5,7 @@ import ImageBuilder from "@/components/ImageBuilder";
 import ArticleBuilder from "@/components/ArticleBuilder";
 import CreatedAt from "@/components/CreatedAt";
 import { Post } from "@/types/AboutPost";
+import type { Metadata } from "next";
 
 type Props = {
   params: {
@@ -12,13 +13,24 @@ type Props = {
   };
 };
 
+export async function generateMetadata({
+  params: { slug },
+}: Props): Promise<Metadata> {
+  const post: Post = await getPost(slug);
+
+  return {
+    title: post.title,
+    description: post.description,
+  };
+}
+
 //기본적으로 [slug]는 주소창에쓴게(라우팅) params로 전달(props)된다.
 //[...slug]라고 하면 파라미터가 있든없든 페이지 나오고, 배열도(중첩라우팅) 사용가능하다.
 
 export default async function Slug({ params: { slug } }: Props) {
   const post: Post = await getPost(slug);
   const author = await getAuthorData({ author_id: post.author._ref });
-  const tagLists = ["개발실력", "공부법", "컴퓨터적으로사고", "컴퓨팅사고"];
+  const tagLists = post.tags.split(",");
   if (!post) {
     redirect("/");
     // notFound();
@@ -32,11 +44,11 @@ export default async function Slug({ params: { slug } }: Props) {
             {author.name} • {CreatedAt({ createdAt: post._createdAt })}
           </h4>
 
-          <div className="flex gap-2">
-            {tagLists.map((tagList) => {
+          <div className="flex flex-wrap gap-2">
+            {tagLists.map((tag) => {
               return (
-                <button className="badge hover:bg-primary" key={tagList}>
-                  {tagList}
+                <button className="badge hover:bg-primary" key={tag}>
+                  {tag}
                 </button>
               );
             })}
