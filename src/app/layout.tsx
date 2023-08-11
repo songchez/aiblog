@@ -2,7 +2,7 @@ import Link from "next/link";
 import "./globals.css";
 import { Open_Sans } from "next/font/google";
 import Footer from "@/components/footer";
-import Script from "next/script";
+import GoogleAnayltics from "@/components/GoogleAnayltics";
 
 const open_Sans = Open_Sans({
   subsets: ["latin"],
@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className={open_Sans.className} data-theme="garden">
-      <head></head>
+      <GoogleAnayltics />
       <body>
         <div className="p-1 sm:p-5">
           <header className="flex justify-center w-full">
