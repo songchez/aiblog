@@ -20,8 +20,7 @@ export default function ArticleBuilder({ postBody }: { postBody: any[] }) {
       <Image
         src={urlBuilder(client)
           .image(value)
-          .width(isInline ? 100 : 800)
-          .fit("max")
+          .width(isInline ? 100 : 700)
           .auto("format")
           .url()}
         alt={value.alt || " "}
@@ -56,7 +55,7 @@ export default function ArticleBuilder({ postBody }: { postBody: any[] }) {
     },
   };
   return (
-    <article className="prose break-words">
+    <article className="container prose break-words">
       <PortableText value={postBody} components={components}></PortableText>
     </article>
   );
