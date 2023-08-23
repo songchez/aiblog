@@ -72,6 +72,6 @@ export default async function Slug({ params: { slug } }: Props) {
 //상세페이지 만들때 쓰임.
 //동적(ssr)으로 하느냐? 아니면 정적(ssg)으로 하느냐?
 export async function generateStaticParams() {
-  const posts = await getPostData();
-  return posts.map((post: any) => ({ slug: post.id }));
+  const posts = await getPostData("");
+  return posts.map((post: Post) => ({ slug: post._id }));
 }
