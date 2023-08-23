@@ -16,6 +16,11 @@ export default function GoogleAnayltics() {
       gtag('config', 'G-04PW6T0VV7');
       `}
       </Script>
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3471034360825552"
+        cross-origin="anonymous"
+      ></Script>
     </div>
   );
 }
