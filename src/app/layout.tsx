@@ -2,8 +2,6 @@ import Link from "next/link";
 import "./globals.css";
 import { Open_Sans } from "next/font/google";
 import Footer from "@/components/footer";
-import GoogleAnayltics from "@/components/GoogleAnayltics";
-import Head from "next/head";
 
 const open_Sans = Open_Sans({
   subsets: ["latin"],
