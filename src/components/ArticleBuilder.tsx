@@ -6,6 +6,7 @@ import Image from "next/image";
 import urlBuilder from "@sanity/image-url";
 import { getImageDimensions } from "@sanity/asset-utils";
 import { client } from "@/util/SanityClient";
+import Script from "next/script";
 
 export default function ArticleBuilder({ postBody }: { postBody: any[] }) {
   const SampleImageComponent = ({
