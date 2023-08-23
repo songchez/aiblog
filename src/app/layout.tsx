@@ -14,7 +14,7 @@ const open_Sans = Open_Sans({
 export const metadata = {
   title: {
     default: "NiceFood&NiceBody",
-    template: "NiceFood&NiceBody | %s",
+    template: "%s | NiceFood&NiceBody",
   },
   description: "Nice food make Nice body.",
 };

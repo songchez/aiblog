@@ -14,7 +14,7 @@ export default async function ArticleCard({ post }: { post: Post }) {
     return builder.image(source);
   }
   return (
-    <div key={post._id}>
+    <div>
       <Link href={`/${post._id}`}>
         <div className="group card card-compact bg-base-100 shadow-xl hover:translate-y-1 max-w-md h-[412px]">
           <figure className="w-fit">
