@@ -57,7 +57,7 @@ export default async function Slug({ params: { slug } }: Props) {
             src={ImageBuilder({ mainImage: post.mainImage })}
             alt={`Main image of${post.title}`}
             width={500}
-            height={400}
+            height={700}
             className="w-full max-h-fit bg-cover"
           />
         </div>
