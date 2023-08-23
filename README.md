@@ -26,7 +26,7 @@ Install my-project with npm
 
 ## Todo
 
-- [ ] Post lasy load(스크롤 내리면 더보기)
+- [ ] Post lasy load(스크롤 내리면 더보기)-구현중...
 - [ ] Article bottom line에 list 넣기
 - [ ] Article UI개선
 - [ ] 검색기능 구현(tag keyword검색)

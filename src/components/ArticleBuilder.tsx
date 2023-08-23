@@ -18,15 +18,10 @@ export default function ArticleBuilder({ postBody }: { postBody: any[] }) {
     const { width, height } = getImageDimensions(value);
     return (
       <Image
-        src={urlBuilder(client)
-          .image(value)
-          .width(isInline ? 100 : 700)
-          .auto("format")
-          .url()}
+        src={urlBuilder(client).image(value).auto("format").url()}
         alt={value.alt || " "}
-        loading="lazy"
-        width={400}
-        height={400}
+        width={1024}
+        height={1024}
         style={{
           // Display alongside text if image appears inside a block text span
           display: isInline ? "inline-block" : "block",
