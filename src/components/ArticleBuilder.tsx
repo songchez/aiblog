@@ -51,8 +51,10 @@ export default function ArticleBuilder({ postBody }: { postBody: any[] }) {
     },
   };
   return (
-    <article className="container prose break-words">
-      <PortableText value={postBody} components={components}></PortableText>
-    </article>
+    <div>
+      <article className="container prose break-words">
+        <PortableText value={postBody} components={components}></PortableText>
+      </article>
+    </div>
   );
 }

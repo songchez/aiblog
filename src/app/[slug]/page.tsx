@@ -61,9 +61,11 @@ export default async function Slug({ params: { slug } }: Props) {
           />
         </div>
         {/* 클라이언트 컴포넌트 */}
-        <ArticleBuilder postBody={post.body.slice(0, 4)}></ArticleBuilder>
-        <ArticleBuilder postBody={post.body.slice(5, 9)}></ArticleBuilder>
-        <ArticleBuilder postBody={post.body.slice(10)}></ArticleBuilder>
+        <ArticleBuilder postBody={post.body.slice(0, 3)}></ArticleBuilder>
+        <ArticleBuilder postBody={post.body.slice(4, 10)}></ArticleBuilder>
+        <ArticleBuilder postBody={post.body.slice(11, 20)}></ArticleBuilder>
+        <ArticleBuilder postBody={post.body.slice(21, 30)}></ArticleBuilder>
+        <ArticleBuilder postBody={post.body.slice(31)}></ArticleBuilder>
       </div>
     </div>
   );
