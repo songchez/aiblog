@@ -8,8 +8,6 @@ const open_Sans = Open_Sans({
   display: "swap",
 });
 
-//head.js가 없어지고 오지는 SEO를 위한 metadata가 생겼다!!!!
-//쉽게 동적메타데이타도 만들어 볼 수 있다!
 export const metadata = {
   title: {
     default: "NiceFood&NiceBody",
@@ -36,7 +34,7 @@ export default function RootLayout({
               </Link>
               {/* PC */}
               <nav className="hidden sm:grid grid-flow-col gap-4">
-                <Link href="/fun">Fun</Link>
+                <Link href="/about">about</Link>
               </nav>
               {/* 모바일 */}
               <div className="dropdown dropdown-end sm:hidden">
@@ -64,7 +62,7 @@ export default function RootLayout({
                   className="dropdown-content menu p-2 shadow bg-base rounded-box w-52"
                 >
                   <li>
-                    <Link href="/fun">TalkToMe</Link>
+                    <Link href="/about">about</Link>
                   </li>
                 </ul>
               </div>
