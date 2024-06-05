@@ -1,13 +1,14 @@
 import Link from "next/link";
 import "./globals.css";
-import { Open_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { Abril_Fatface } from "next/font/google";
 import Footer from "@/components/footer";
 import Image from "next/image";
 
-const open_Sans = Open_Sans({
+const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
+  weight: "200",
 });
 
 const abrilFatface = Abril_Fatface({
@@ -30,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko" className={open_Sans.className} data-theme="garden">
+    <html lang="en" className={poppins.className} data-theme="garden">
       <body>
         <div>
           <header
@@ -50,6 +51,7 @@ export default function RootLayout({
               </h1>
             </div>
             <nav className="w-full bg-slate-50 shadow-md text-lg grid grid-flow-col justify-center">
+              {navChild("/", "Home")}
               {navChild("about", "About")}
               {navChild("foods", "Foods")}
               {navChild("meditation", "Meditation")}

@@ -1,7 +1,7 @@
 import { Post } from "@/types/AboutPost";
 import ArticleCard from "./ArticleCard";
 
-export default function LazyPostCard({ posts }: { posts: Post[] }) {
+export default function PostCard({ posts }: { posts: Post[] }) {
   return (
     <>
       {posts.map((post: Post) => {
