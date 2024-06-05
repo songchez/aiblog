@@ -6,7 +6,4 @@ export interface Post {
   _createdAt: any;
   mainImage: string;
   body: any[];
-  author: {
-    _ref: string;
-  };
 }

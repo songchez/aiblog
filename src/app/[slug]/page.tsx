@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { redirect } from "next/navigation";
-import { getAuthorData, getPost, getPostData } from "../api/blogData";
+import { getPost, getPostData } from "../api/blogData";
 import ImageBuilder from "@/components/ImageBuilder";
 import ArticleBuilder from "@/components/ArticleBuilder";
 import CreatedAt from "@/components/CreatedAt";
@@ -29,7 +29,6 @@ export async function generateMetadata({
 
 export default async function Slug({ params: { slug } }: Props) {
   const post: Post = await getPost(slug);
-  const author = await getAuthorData({ author_id: post.author._ref });
   const tagLists = post.tags.split(",");
   if (!post) {
     redirect("/");
@@ -40,10 +39,7 @@ export default async function Slug({ params: { slug } }: Props) {
       <div key={post._id} className="container px-10 w-full max-w-4xl">
         <div className="grid gap-4">
           <h1 className="pt-28 text-5xl font-bold">{post.title}</h1>
-          <h4>
-            {author.name} • {CreatedAt({ createdAt: post._createdAt })}
-          </h4>
-
+          <h4>{CreatedAt({ createdAt: post._createdAt })}</h4>
           <div className="flex flex-wrap gap-2">
             {tagLists.map((tag) => {
               return (
