@@ -4,7 +4,7 @@ import { Poppins } from "next/font/google";
 import { Abril_Fatface } from "next/font/google";
 import Footer from "@/components/footer";
 import Image from "next/image";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 const poppins = Poppins({
   subsets: ["latin"],

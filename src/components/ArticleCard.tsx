@@ -3,7 +3,6 @@ import imageUrlBuilder from "@sanity/image-url";
 import Image from "next/image";
 import Link from "next/link";
 import CreatedAt from "./CreatedAt";
-import HeartIcon from "/public/icon_heart.svg";
 import { randomInt } from "crypto";
 import { Post } from "@/types/AboutPost";
 
@@ -29,19 +28,13 @@ export default async function ArticleCard({ post }: { post: Post }) {
             </div>
           </figure>
           <div className="card-body overflow-hidden">
-            <h3 className="font-semibold text-left card-title">{post.title}</h3>
-            <p className="truncate text-gray-500 ">
-              {post.body[0].children[0].text}
-            </p>
-            <div className="flex justify-between">
-              <span className="text-left text-sm">
-                {CreatedAt({ createdAt: post._createdAt })} • {randomInt(2000)}
-                view
-              </span>
-              <button>
-                <Image src={HeartIcon} alt="hearticon"></Image>
-              </button>
-            </div>
+            <h3 className="card-title font-semibold text-left">{post.title}</h3>
+          </div>
+          <div className="flex justify-end items-end p-4">
+            <span className="text-right text-sm">
+              {CreatedAt({ createdAt: post._createdAt })} • {randomInt(2000)}
+              view
+            </span>
           </div>
         </div>
       </Link>
