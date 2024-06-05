@@ -39,7 +39,7 @@ export default function RootLayout({
             className={`${abrilFatface.className} flex flex-col justify-center w-full`}
           >
             <Image
-              className="w-screen h-96 object-cover brightness-90"
+              className="fade-in w-screen h-96 object-cover brightness-90"
               src="/heroImage.jpg"
               alt="hero_image"
               width={1024}
