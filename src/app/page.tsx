@@ -11,7 +11,7 @@ export default async function Home() {
 
   return (
     <main className="flex justify-center items-center">
-      <div className="flex justify-center items-center text-center mt-28 max-w-6xl">
+      <div className="flex justify-center items-center text-center mt-5 max-w-6xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-3 max-w-5xl">
           {firstposts.map((post: Post) => {
             return (
